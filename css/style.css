@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.mane {
+  background-color: #EEE;
+  min-height: 100vh;
+}
+.mane .neme {
+  background-color: #2196f3;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0;
+}
+.mane .container {
+  padding: 5px 25px;
+  margin: auto;
+  max-width: 900px;
+}
+.mane .container .progress {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+}
+.mane .container .progress span {
+  font-weight: bold;
+  color: #009688;
+}
+.mane .container .progress span::before {
+  content: "[ ";
+}
+.mane .container .progress span::after {
+  content: " ]";
+}
+.mane .container #start {
+  font-size: 20px;
+  font-weight: bold;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
+.mane .container #word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+  color: #2196f3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.mane .container #input {
+  margin: 15px auto;
+  width: 85%;
+  display: block;
+  padding: 15px;
+  border: 3px solid #2196f3;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  caret-color: #2196f3;
+}
+.mane .container #input:focus {
+  outline: none;
+}
+.mane .container #nextWord {
+  background-color: white;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 85%;
+  margin: 15px auto;
+}
+.mane .container #nextWord div {
+  background-color: #2196f3;
+  color: white;
+  margin: 4px;
+  padding: 3px 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.mane .container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+}
+.mane .container .info span {
+  font-weight: bold;
+  color: #009688;
+}
+.mane .container #finish {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+.mane .container .good {
+  color: #00bf23;
+}
+.mane .container .bad {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,98 @@
+$main-color: #2196f3
+$co-color: #009688
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    border-radius: 4px
+
+body
+    font-family: "Open Sans", sans-serif
+
+.mane
+    background-color: #EEE
+    min-height: 100vh
+    .neme
+        background-color: $main-color
+        color: white
+        padding: 20px
+        font-size: 25px
+        text-align: center
+        font-weight: bold
+        border-radius: 0
+    .container
+        padding: 5px 25px
+        margin: auto
+        max-width: 900px
+        .progress
+            background-color: white
+            padding: 15px
+            margin: 15px 0
+            text-align: center
+            span
+                font-weight: bold
+                color: $co-color
+                &::before
+                    content: '[ '
+                &::after
+                    content: ' ]'
+        #start
+            font-size: 20px
+            font-weight: bold
+            width: 85%
+            margin: auto
+            text-align: center
+            background-color: $co-color
+            color: white
+            padding: 15px
+            cursor: pointer
+        #word
+            text-align: center
+            font-weight: bold
+            font-size: 45px
+            color: $main-color
+            user-select: none
+        #input
+            margin: 15px auto
+            width: 85%
+            display: block
+            padding: 15px
+            border: 3px solid $main-color
+            text-align: center
+            font-size: 20px
+            text-transform: capitalize
+            caret-color: $main-color
+            &:focus
+                outline: none
+        #nextWord
+            background-color: white
+            padding: 15px
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            width: 85%
+            margin: 15px auto
+            div
+                background-color: $main-color
+                color: white
+                margin: 4px
+                padding: 3px 10px
+                user-select: none
+        .info
+            display: flex
+            justify-content: space-between
+            background-color: white
+            padding: 15px
+            margin: 15px 0
+            span
+                font-weight: bold
+                color: $co-color
+        #finish
+            font-size: 30px
+            font-weight: bold
+            text-align: center
+            padding: 15px
+        .good
+            color: #00bf23
+        .bad
+            color: red
